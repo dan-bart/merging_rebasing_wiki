@@ -1,4 +1,5 @@
 # Rebasing
+Sources: https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview;https://git-scm.com/book/en/v2/Git-Branching-Rebasing;https://www.codeproject.com/Articles/5262688/Advanced-GIT-Tutorial-Interactive-Rebase;https://mtyurt.net/post/git-using-advanced-rebase-features-for-a-clean-repository.html 
 ## Overview
 Ability
 - text
