@@ -4,12 +4,12 @@ Text
 - text
 + text
 
-##Do's
+## Do's
 Text
 - text
 + text
 
-##Don'ts
+## Don'ts
 Text
 - text
 + text
