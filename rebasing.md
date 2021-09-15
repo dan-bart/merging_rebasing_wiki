@@ -31,10 +31,20 @@ git rebase -i <master/main>
 ```
 + During the editing process, use '**pick**', '**drop**' or '**fixup**' (incorporating one commit to another) to manage the commits. Here is a list of many other orders:
 
-
-
-
-
+```
+p, pick = use commit
+r, reword = use commit, but edit the commit message
+e, edit = use commit, but stop for amending
+s, squash = use commit, but meld into previous commit
+f, fixup = like "squash", but discard this commit's log message
+x, exec = run command (the rest of the line) use shell
+b, break = stop here
+d, drop <commit> = remove commit
+l, label <label> = label current HEAD with a name
+t, reset <label> = reset HEAD to a label
+m, merge = creates a merge commit using the original commit message
+```
+  
 **Recent commits adjusments**
 - 'git rebase' can be specified onto any base (commit), therefore, subsequent code 'moves' a branch onto the current commit:
 ```
