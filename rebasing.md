@@ -24,7 +24,7 @@ git merge <addedbranch>
 
 **Interactive rebasing**
 
-- By default, 'git rebase' makes new commits from the original branch one by one. Interactive rebase can edit these commits by opening a text file. It makes the history even cleaner. Simply put **-i** before base branch:
+- By default, 'git rebase' solves conflicts and makes new commits from the original branch one by one. Interactive rebase can edit these commits by opening a text file. It makes the history even cleaner. Simply put **-i** before base branch:
 ```
 git checkout <addedbranch>
 git rebase -i <master/main>
@@ -57,7 +57,7 @@ git rebase -i HEAD~2
 - The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and it keeps the **history clean**. :broom: 
 
 **Multiple branching**
-- text
+- 
 + text
 
 **list of flags and features**
