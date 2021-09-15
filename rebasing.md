@@ -2,10 +2,9 @@
 Sources: https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview ; https://git-scm.com/book/en/v2/Git-Branching-Rebasing ; https://www.codeproject.com/Articles/5262688/Advanced-GIT-Tutorial-Interactive-Rebase ; https://mtyurt.net/post/git-using-advanced-rebase-features-for-a-clean-repository.html 
 
 ## Introduction
-Ability
-- Command "git rebase" is a powerful technique of consolidating changes from two branches. The result is only one branch with linear rewritten history (follow-up changes not necessarily in chronological order).
-+ Rebasing moves a whole added branch from its roots onto the newest commit of a specified base branch (typically master/main).
-+ To carry out the action, the HEAD must be set to the added branch and base branch must be specified. The subsequent commands can be used:
+Command "git rebase" is a powerful technique of consolidating changes from two branches. The result is only one branch with linear rewritten history (follow-up changes not necessarily in chronological order).
+Rebasing moves a whole added branch from its roots onto the newest commit of a specified base branch (typically master/main).
+To carry out the action, the HEAD must be set to the added branch and base branch must be specified. The subsequent commands can be used:
 ```
 git checkout <addedbranch>
 git rebase <master/main>
