@@ -15,14 +15,14 @@ git checkout <master/main>
 git merge <addedbranch>
 ```
 
-Advantages
+**Advantages**
 - In addition to 'git merge' it essentially allows collaboration among coworkers.
 + Linear history is beneficial for your colleagues as they are discovering your content. They do not need to figure out complex merging history. 
 + Rebasing makes the search for mistakes (debugging) more user friendly and it does not create additional unnecessary commits.
 
 ## Proper rebase usage - Do's :white_check_mark:
 
-Interactive rebase
+**Interactive rebase**
 
 - By default, 'git rebase' makes new commits from the original branch one by one. Interactive rebase can edit these commits by opening a text file. It makes the history even cleaner. Simply put **-i** before base branch:
 ```
@@ -31,7 +31,7 @@ git rebase -i <master/main>
 ```
 + During the editing precess, use '**pick**', '**drop**' or '**fixup**' (incorporating one commit to another) to manage the commits.
 
-Recent commits adjusments
+**Recent commits adjusments**
 - 'git rebase' can be specified onto any base (commit), therefore, subsequent code 'moves' a branch onto the current commit:
 ```
 git checkout <addedbranch>
@@ -39,14 +39,14 @@ git rebase -i HEAD~2
 ```
 + This procedure can be definitely helpful since it allows editing (interactive rebasing) the 2 most recent commits on the added branch without actually 'moving'. It is possible to specify commits using hash as well.
 
-Frequent commiting
+**Frequent commiting**
 - The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and it keeps the **history clean**. :broom: 
 
-Multiple branching
+**Multiple branching**
 - text
 + text
 
-list of flags and features
+**list of flags and features**
 
 ## Prevention of rebase usage - Don'ts :no_entry:
 Public branch
