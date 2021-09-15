@@ -30,7 +30,9 @@ git checkout <addedbranch>
 git rebase -i <master/main>
 ```
 + During the editing process, use '**pick**', '**drop**' or '**fixup**' (incorporating one commit to another) to manage the commits. Here is a list of many other orders:
-![Snímek obrazovky (100)](https://user-images.githubusercontent.com/90181057/133495603-57e2dc00-84ae-4a63-9c4c-1509dc7c432f.png)
+![list of orders](https://user-images.githubusercontent.com/90181057/133495991-04664d96-c986-4b43-a824-4aa0e23597a7.png)
+
+
 
 **Recent commits adjusments**
 - 'git rebase' can be specified onto any base (commit), therefore, subsequent code 'moves' a branch onto the current commit:
