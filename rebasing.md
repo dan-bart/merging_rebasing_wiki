@@ -2,8 +2,8 @@
 Sources: https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview ; https://git-scm.com/book/en/v2/Git-Branching-Rebasing ; https://www.codeproject.com/Articles/5262688/Advanced-GIT-Tutorial-Interactive-Rebase ; https://mtyurt.net/post/git-using-advanced-rebase-features-for-a-clean-repository.html ; https://itnext.io/advantages-of-git-rebase-af3b5f5448c6
 
 ## Introduction
-Command "git rebase" is a powerful technique of consolidating changes from two branches. The result is only one branch with rewritten **linear history** (follow-up changes not necessarily in chronological order).
-Rebasing moves a whole added branch from its roots onto the newest commit of a specified base branch (typically master/main).
+Command 'git rebase' is a powerful technique of consolidating changes from two branches. The result is only one branch with rewritten **linear history** (follow-up changes not necessarily in chronological order).
+Rebasing 'moves' a whole added branch from its roots onto the newest commit of a specified base branch (typically master/main).
 To carry out the action, the HEAD must be set to the added branch and base branch must be specified. The subsequent commands can be used:
 ```
 git checkout <addedbranch>
@@ -16,7 +16,7 @@ git merge <addedbranch>
 ```
 
 Advantages
-- In addition to "git merge" it essentially allows collaboration among coworkers.
+- In addition to 'git merge' it essentially allows collaboration among coworkers.
 + Linear history is beneficial for your colleagues as they are discovering your content. They do not need to figure out complex merging history. 
 + Rebasing makes the search for mistakes (debugging) more user friendly and it does not create additional unnecessary commits.
 
@@ -24,18 +24,22 @@ Advantages
 
 Interactive rebase
 
-- By default, "git rebase" makes new commits from the original branch one by one. Interactive rebase can edit these commits by opening a text file. It makes the history even cleaner. Simply put **-i** before base branch:
+- By default, 'git rebase' makes new commits from the original branch one by one. Interactive rebase can edit these commits by opening a text file. It makes the history even cleaner. Simply put **-i** before base branch:
 ```
 git checkout <addedbranch>
 git rebase -i <master/main>
 ```
 
 Recent commits adjusments
-- text
-+ text
+- 'git rebase' can be specified onto any base (commit), therefore, subsequent code 'moves' a branch onto the current commit:
+```
+git checkout <addedbranch>
+git rebase -i HEAD~2
+```
++ This procedure can be definitely helpful since it allows editing (interactive rebasing) the 2 most recent commits on the added branch without actually 'moving'.
 
 Frequent commiting
-- text
+- Repeatedly 
 + text
 
 Multiple branching
