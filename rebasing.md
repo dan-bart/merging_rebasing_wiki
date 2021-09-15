@@ -31,7 +31,7 @@ git rebase -i <master/main>
 ```
 + During the editing process, use '**pick**', '**drop**' or '**fixup**' (incorporating one commit to another) to manage the commits. Here is a list of many other orders:
 
-![list of orders](https://user-images.githubusercontent.com/90181057/133495991-04664d96-c986-4b43-a824-4aa0e23597a7.png)
+
 
 
 
