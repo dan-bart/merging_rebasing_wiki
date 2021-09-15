@@ -6,7 +6,9 @@ Ability
 - Command "git rebase" is a powerful technique of consolidating changes from two branches. The result is only one branch with linear rewritten history (follow-up changes not necessarily in chronological order).
 + Rebasing moves a whole added branch from its roots onto the newest commit of a specified base branch (typically master/main).
 + To carry out the action, the HEAD must be set to the added branch and base branch must be specified. "git checkout <addedbranch>" and "git rebase <master/main>" commands can be used.
-  
+```
+
+
 
 ## Proper rebase usage -Do's
 Advantages
