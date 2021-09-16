@@ -109,6 +109,7 @@ git branch -d added2
 Public branch
 - Avoid rebasing on public branch. Your colleagues could loose their work.
 - Avoid rebasing pushed commits. If you already pushed commits to remote and other people have used them as base for their work, rebasing would create unnecessary merge conflicts.
+- If it happened, one possibility is to 'git rebase' again since Git may distinguish the changes if the commits are similar. However, do this only with extreme confidence.
 
 ## Rebasing vs Merging
 Keeping a linear history of commits is not always preferred. For example, after developing a self-consistent feature, there will probably be no need to go back and observe the individual commits, so merging would be a better tool, as we would end up with the feature changes bundled up as one big commit during the merge. Moreover, the feature commits are then nicely bundled when looking at the repository history. Conversely, if a developer made many unrelated changes that do not have a common framework outline, it is best to use rebase.
