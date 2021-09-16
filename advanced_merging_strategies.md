@@ -1,18 +1,25 @@
 # Advanced merging startegies
 
-Zdroje:  
-https://stackoverflow.com/questions/366860/when-would-you-use-the-different-git-merge-strategies  
-https://www.atlassian.com/git/tutorials/using-branches/merge-strategy  
-https://git-scm.com/docs/git-merge  
-https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff  
-https://marc.info/?l=linux-kernel&m=139033182525831  
-https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/b106e7f9582f0a0eb1d787c4b8a1d093.html  
+## Contents
+- [Advanced merging startegies](#advanced-merging-startegies)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Strategies](#strategies)
+    - [(no) Fast-forward](#no-fast-forward)
+      - [With fast-forward](#with-fast-forward)
+      - [Without fast-forward](#without-fast-forward)
+    - [Resolve](#resolve)
+    - [Recursive](#recursive)
+    - [Octopus](#octopus)
+    - [Ours](#ours)
+    - [Subtree](#subtree)
+  - [Sources](#sources)
 
 ## Introduction
 
 The purpose of merging in Git is to apply changes from one branch to another. For example, when new features have been developed and tested in the 'dev' branch, they can be deployed to the production 'main' / 'master' branch. However, the changes are often not fit for a fast-forward merge. Some parts of code could have been overwritten, and Git could not be able to determine, which version it should keep. For this reason, merging strategies have been developed.
 
-### Strategies
+## Strategies
 
 ### (no) Fast-forward
 ```
@@ -101,6 +108,14 @@ New 2021 strategy, TODO
 https://www.theregister.com/2021/08/17/git_233/  
 https://lore.kernel.org/git/xmqq1r6touqi.fsf@gitster.g/  
 
-
+## Sources
+When researching information for this Wiki, we have used the following sources to obtain information:
+ 
+- https://stackoverflow.com/questions/366860/when-would-you-use-the-different-git-merge-strategies  
+- https://www.atlassian.com/git/tutorials/using-branches/merge-strategy  
+- https://git-scm.com/docs/git-merge  
+- https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff  
+- https://marc.info/?l=linux-kernel&m=139033182525831  
+- https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/- b106e7f9582f0a0eb1d787c4b8a1d093.html  
 
 
