@@ -9,13 +9,13 @@ Stylized description of advanced merging strategies and rebasing
 ## Contents
 This wiki is divided into 2 main components.
 * [Advanced merging strategies](./advanced_merging_strategies.md)
-    * 
+    * There is a number of strategies to combine two or more branches.
 * [Rebasing](rebasing.md)
-    * 
+    * Rebase is used to consolidate changes made in two branches.
 
 
 ## Support
-Feel free to open an Issue right here in GitHub whenever you find a problem with the contents of the repository.
+Feel free to open an Issue right [here](https://github.com/dan-bart/merging_rebasing_wiki/issues) in GitHub whenever you find a problem with the contents of the repository.
 
 ## Contributing
 
