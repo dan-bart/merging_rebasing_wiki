@@ -116,6 +116,6 @@ When researching information for this Wiki, we have used the following sources t
 - https://git-scm.com/docs/git-merge  
 - https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff  
 - https://marc.info/?l=linux-kernel&m=139033182525831  
-- https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/- b106e7f9582f0a0eb1d787c4b8a1d093.html  
+- https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/-b106e7f9582f0a0eb1d787c4b8a1d093.html  
 
 
