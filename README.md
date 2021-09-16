@@ -6,6 +6,13 @@ Stylized description of advanced merging strategies and rebasing
 [![Last commit](https://img.shields.io/github/last-commit/dan-bart/merging_rebasing_wiki)](https://github.com/dan-bart/merging_rebasing_wiki/commits/main)
 [![License](https://img.shields.io/github/license/dan-bart/merging_rebasing_wiki)](https://github.com/dan-bart/merging_rebasing_wiki#readme)
 
+## Contents
+This wiki is divided into 2 main components.
+* [Advanced merging strategies](./advanced_merging_strategies.md)
+    * 
+* [Rebasing](rebasing.md)
+    * 
+
 
 ## Support
 Feel free to open an Issue right here in GitHub whenever you find a problem with the contents of the repository.
