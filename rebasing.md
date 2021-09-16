@@ -54,7 +54,7 @@ git rebase -i HEAD~2
 **Frequent commiting**
 - The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and to keep the **history clean**. :broom: 
 
-**Multiple branching**
+## Multiple branching
 - Naturally, it happens that there are additional branches created from yet existing branches.
 ```
            K -- L            <-- master/main
@@ -88,10 +88,7 @@ git rebase --onto <master/main> <added1> <added2>
            I -- J -- O       <-- added1
               
 ```
-+ Further imagine that *added1* branch is complete and should be incorporated into *master/main*. We proceed with standard rebasing and executing fast-forward merge:
-```
-git rebase <master/main> <added1>
-```
++ Further imagine that *added1* branch is complete and should be incorporated into *master/main*. We proceed with standard rebasing ```git rebase <master/main> <added1>``` and executing fast-forward merge:
 ```
            K -- L            
          /       \
@@ -103,7 +100,8 @@ git branch -d added1
 git branch -d added2
 ```
 
-**list of flags and features**
+**--keep-base**
+- After version Git 2.24 (Q4 2019), ```git rebase --keep-base <upstream>``` finds the original base of the topic being rebased and rebase on top of that same base.
 
 ## Prevention of rebase usage - Don'ts :no_entry:
 Public branch
@@ -114,10 +112,6 @@ Public branch
 ## Rebasing vs Merging
 Keeping a linear history of commits is not always preferred. For example, after developing a self-consistent feature, there will probably be no need to go back and observe the individual commits, so merging would be a better tool, as we would end up with the feature changes bundled up as one big commit during the merge. Moreover, the feature commits are then nicely bundled when looking at the repository history. Conversely, if a developer made many unrelated changes that do not have a common framework outline, it is best to use rebase.
 
-
-an extraneous merge commit every time you need to incorporate upstream changes. If *master/main* is very active, this can pollute your feature branch’s history quite a bit. 
-
-
 ![9c4ctjue6vl71](https://user-images.githubusercontent.com/79012119/132845480-9913fca6-3b2a-4771-bfc6-8cd1e96e7c10.jpg)
 
 ### Sources:  
@@ -125,4 +119,5 @@ https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview
 https://git-scm.com/book/en/v2/Git-Branching-Rebasing   
 https://www.codeproject.com/Articles/5262688/Advanced-GIT-Tutorial-Interactive-Rebase  
 https://mtyurt.net/post/git-using-advanced-rebase-features-for-a-clean-repository.html  
-https://itnext.io/advantages-of-git-rebase-af3b5f5448c6  
+https://itnext.io/advantages-of-git-rebase-af3b5f5448c6
+https://stackoverflow.com/questions/53234798/can-i-rebase-on-a-branchs-fork-point-without-explicitly-specifying-the-parent
