@@ -55,8 +55,53 @@ git rebase -i HEAD~2
 - The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and to keep the **history clean**. :broom: 
 
 **Multiple branching**
-- 
-+ text
+- Naturally, it happens that there are additional branches created from yet existing branches.
+```
+           K -- L            <-- master/main
+         /
+...--G--H
+         \
+           I -- J -- O       <-- added1
+            \
+              M -- N         <-- added2
+              
+```
++ Imagine that *added2* branch is complete and should be incorporated into *master/main*. 'git rebase' offers an interesting --onto option:
+```
+git rebase --onto <master/main> <added1> <added2>
+```
++ The result is the following:
+```
+           K -- L            <-- master/main
+         /       \
+...--G--H          M' -- N'  <-- added2
+         \
+           I -- J -- O       <-- added1
+              
+```
++ Now it is crucial to execute a fast-forward merge as described in the Introduction:
+```
+           K -- L            
+         /       \
+...--G--H          M' -- N'  <-- added2 <-- master/main
+         \
+           I -- J -- O       <-- added1
+              
+```
++ Further imagine that *added1* branch is complete and should be incorporated into *master/main*. We proceed with standard rebasing and executing fast-forward merge:
+```
+git rebase <master/main> <added1>
+```
+```
+           K -- L            
+         /       \
+...--G--H          M' -- N' -- I' -- J' -- O'  <-- added2 <-- added1 <-- master/main     
+```
+To conclude the work, the branches can be deleted since they are incorporated:
+```
+git branch -d added1
+git branch -d added2
+```
 
 **list of flags and features**
 
