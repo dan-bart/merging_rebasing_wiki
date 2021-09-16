@@ -1,5 +1,15 @@
 # Rebasing
 
+## Contents
+- [Rebasing](#rebasing)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Proper rebase usage - Do's :white_check_mark:](#proper-rebase-usage---dos-white_check_mark)
+  - [Multiple branching](#multiple-branching)
+  - [Prevention of rebase usage - Don'ts :no_entry:](#prevention-of-rebase-usage---donts-no_entry)
+  - [Rebasing vs Merging](#rebasing-vs-merging)
+  - [Sources](#sources)
+
 ## Introduction
 Command '**git rebase**' is a powerful technique of consolidating changes from two branches. The result is only one branch with rewritten **linear history** (follow-up changes not necessarily in chronological order).
 Rebasing 'moves' a whole added branch from its roots onto the newest commit of a specified base branch (typically *master/main* or any other branch when collaborating with other developers).
@@ -114,7 +124,9 @@ Keeping a linear history of commits is not always preferred. For example, after 
 
 ![9c4ctjue6vl71](https://user-images.githubusercontent.com/79012119/132845480-9913fca6-3b2a-4771-bfc6-8cd1e96e7c10.jpg)
 
-### Sources:  
+## Sources
+When researching information for Rebasing , we have used the following sources to obtain information:
+
 https://www.atlassian.com/git/tutorials/merging-vs-rebasing#conceptual-overview  
 https://git-scm.com/book/en/v2/Git-Branching-Rebasing   
 https://www.codeproject.com/Articles/5262688/Advanced-GIT-Tutorial-Interactive-Rebase  
