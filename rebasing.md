@@ -52,7 +52,7 @@ git rebase -i HEAD~2
 + This procedure can be definitely helpful since it allows editing (interactive rebasing) the 2 most recent commits on the added branch without actually 'moving'. It is possible to specify commits using hash as well.
 
 **Frequent commiting**
-- The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and it keep the **history clean**. :broom: 
+- The number of rebasings in a particular period is without any restrictions. However, it is recommended to rebase constantly to prevent larger conflicts and to keep the **history clean**. :broom: 
 
 **Multiple branching**
 - 
