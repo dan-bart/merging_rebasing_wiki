@@ -102,11 +102,12 @@ git read-tree --prefix=*dir-name*/ -u sub-branch
 After committing some changes in the sub-branch, we can then checkout to the main-branch, and use the Subtree strategy to update main-branch with files from the sub-branch.
 
 
-Ostensibly Recursive's Twin
+### Ostensibly Recursive's Twin (merge-ort)
+```
+git merge -s ort branch1 branch2 
+```
+On 16th of August, Git 2.33 has been released along with a new merging strategy "merge-ort". According to GitHub developers, this strategy uses the same concept as the Git default "recursive" strategy, but solves performance issues for some tricky corner cases. In fact, it has been tested that merge-ort was 500 to 9000 times faster than the default strategy in some cases. It is likely to become the default thanks to its performace and improved integrability with other tools.
 
-New 2021 strategy, TODO  
-https://www.theregister.com/2021/08/17/git_233/  
-https://lore.kernel.org/git/xmqq1r6touqi.fsf@gitster.g/  
 
 ## Sources
 When researching information for this Wiki, we have used the following sources to obtain information:
@@ -114,8 +115,8 @@ When researching information for this Wiki, we have used the following sources t
 - https://stackoverflow.com/questions/366860/when-would-you-use-the-different-git-merge-strategies  
 - https://www.atlassian.com/git/tutorials/using-branches/merge-strategy  
 - https://git-scm.com/docs/git-merge  
+- https://www.theregister.com/2021/08/17/git_233/
+- https://lore.kernel.org/git/xmqq1r6touqi.fsf@gitster.g/
 - https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff  
 - https://marc.info/?l=linux-kernel&m=139033182525831  
-- https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/-b106e7f9582f0a0eb1d787c4b8a1d093.html  
-
-
+- https://yunwuxin1.gitbooks.io/git/content/en/166dfa9a3724f8ec184652066005eef6/-b106e7f9582f0a0eb1d787c4b8a1d093.html 
